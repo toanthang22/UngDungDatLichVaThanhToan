@@ -43,6 +43,66 @@ namespace ungdungdatlichvathanhtoantructuyen
         {
 
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void qUẢNLÝToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void đẶTLỊCHToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tRANGCÁNHÂNToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void kHÁCHHÀNGToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dỊCHVỤToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lỊCHHẸNToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panebanner_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnlogin_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelcontent_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Normasearch_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 
 }
