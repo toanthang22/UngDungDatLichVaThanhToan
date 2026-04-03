@@ -103,6 +103,11 @@ namespace ungdungdatlichvathanhtoantructuyen
         {
 
         }
+
+        private void panelsearch_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 
 }

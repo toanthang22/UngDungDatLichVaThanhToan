@@ -33,13 +33,13 @@
             contextMenuStrip2 = new ContextMenuStrip(components);
             homeToolStripMenuItem = new ToolStripMenuItem();
             panel1 = new Panel();
-            panebanner = new Panel();
-            panelcontent = new Panel();
-            labellogo = new Label();
-            btnlogin = new Button();
             btnresister = new Button();
-            pictureBox1 = new PictureBox();
+            btnlogin = new Button();
+            labellogo = new Label();
+            panebanner = new Panel();
             panelsearch = new Panel();
+            pictureBox1 = new PictureBox();
+            panelcontent = new Panel();
             contextMenuStrip2.SuspendLayout();
             panel1.SuspendLayout();
             panebanner.SuspendLayout();
@@ -67,14 +67,46 @@
             // 
             // panel1
             // 
+            panel1.BackColor = SystemColors.Highlight;
             panel1.Controls.Add(btnresister);
             panel1.Controls.Add(btnlogin);
             panel1.Controls.Add(labellogo);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(800, 60);
+            panel1.Size = new Size(1139, 60);
             panel1.TabIndex = 5;
+            // 
+            // btnresister
+            // 
+            btnresister.Location = new Point(1033, 12);
+            btnresister.Name = "btnresister";
+            btnresister.Size = new Size(94, 29);
+            btnresister.TabIndex = 2;
+            btnresister.Text = "Đăng Ký";
+            btnresister.UseVisualStyleBackColor = true;
+            btnresister.Click += button1_Click;
+            // 
+            // btnlogin
+            // 
+            btnlogin.Location = new Point(929, 12);
+            btnlogin.Name = "btnlogin";
+            btnlogin.Size = new Size(94, 29);
+            btnlogin.TabIndex = 1;
+            btnlogin.Text = "Đăng Nhập";
+            btnlogin.UseVisualStyleBackColor = true;
+            btnlogin.Click += btnlogin_Click;
+            // 
+            // labellogo
+            // 
+            labellogo.AutoSize = true;
+            labellogo.Font = new Font("Times New Roman", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            labellogo.ForeColor = Color.White;
+            labellogo.Location = new Point(12, 9);
+            labellogo.Name = "labellogo";
+            labellogo.Size = new Size(228, 34);
+            labellogo.TabIndex = 0;
+            labellogo.Text = "Ứng dụng đặt lịch";
             // 
             // panebanner
             // 
@@ -83,47 +115,20 @@
             panebanner.Dock = DockStyle.Top;
             panebanner.Location = new Point(0, 60);
             panebanner.Name = "panebanner";
-            panebanner.Size = new Size(800, 250);
+            panebanner.Size = new Size(1139, 250);
             panebanner.TabIndex = 6;
             panebanner.Paint += panebanner_Paint;
             // 
-            // panelcontent
+            // panelsearch
             // 
-            panelcontent.Dock = DockStyle.Fill;
-            panelcontent.Location = new Point(0, 310);
-            panelcontent.Name = "panelcontent";
-            panelcontent.Size = new Size(800, 140);
-            panelcontent.TabIndex = 7;
-            panelcontent.Paint += panelcontent_Paint;
-            // 
-            // labellogo
-            // 
-            labellogo.AutoSize = true;
-            labellogo.Location = new Point(12, 9);
-            labellogo.Name = "labellogo";
-            labellogo.Size = new Size(128, 20);
-            labellogo.TabIndex = 0;
-            labellogo.Text = "Ứng dụng đặt lịch";
-            // 
-            // btnlogin
-            // 
-            btnlogin.Location = new Point(599, 5);
-            btnlogin.Name = "btnlogin";
-            btnlogin.Size = new Size(94, 29);
-            btnlogin.TabIndex = 1;
-            btnlogin.Text = "Đăng Nhập";
-            btnlogin.UseVisualStyleBackColor = true;
-            btnlogin.Click += btnlogin_Click;
-            // 
-            // btnresister
-            // 
-            btnresister.Location = new Point(699, 5);
-            btnresister.Name = "btnresister";
-            btnresister.Size = new Size(94, 29);
-            btnresister.TabIndex = 2;
-            btnresister.Text = "Đăng Ký";
-            btnresister.UseVisualStyleBackColor = true;
-            btnresister.Click += button1_Click;
+            panelsearch.BackColor = Color.White;
+            panelsearch.BorderStyle = BorderStyle.FixedSingle;
+            panelsearch.Location = new Point(93, 104);
+            panelsearch.Name = "panelsearch";
+            panelsearch.Size = new Size(401, 77);
+            panelsearch.TabIndex = 1;
+            panelsearch.Tag = "txtsearch";
+            panelsearch.Paint += panelsearch_Paint;
             // 
             // pictureBox1
             // 
@@ -133,24 +138,25 @@
             pictureBox1.Location = new Point(0, 0);
             pictureBox1.Margin = new Padding(5);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(800, 250);
+            pictureBox1.Size = new Size(1139, 250);
             pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
-            // panelsearch
+            // panelcontent
             // 
-            panelsearch.BackColor = Color.White;
-            panelsearch.Location = new Point(38, 69);
-            panelsearch.Name = "panelsearch";
-            panelsearch.Size = new Size(700, 120);
-            panelsearch.TabIndex = 1;
+            panelcontent.Dock = DockStyle.Fill;
+            panelcontent.Location = new Point(0, 310);
+            panelcontent.Name = "panelcontent";
+            panelcontent.Size = new Size(1139, 140);
+            panelcontent.TabIndex = 7;
+            panelcontent.Paint += panelcontent_Paint;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1139, 450);
             Controls.Add(panelcontent);
             Controls.Add(panebanner);
             Controls.Add(panel1);
